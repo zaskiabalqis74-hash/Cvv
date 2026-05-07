@@ -1,0 +1,139 @@
+/* ================= RESET DASAR ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ================= BODY ================= */
+body {
+  background: #f8f7ff;
+  color: #333;
+}
+
+/* ================= HEADER ================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: #cdb4db;
+}
+
+/* teks header */
+.header h1 {
+  font-size: 38px;
+  margin-bottom: 5px;
+}
+
+.header p {
+  font-size: 18px;
+}
+
+/* ================= FOTO PROFIL ================= */
+.profile {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid white;
+  background: white;
+}
+
+/* gambar */
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* ================= LAYOUT ================= */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* kolom kiri */
+.left {
+  flex: 2;
+}
+
+/* kolom kanan */
+.right {
+  flex: 1;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* judul card */
+.card h2 {
+  margin-bottom: 15px;
+  color: #6d597a;
+  font-size: 22px;
+}
+
+/* paragraf */
+.card p {
+  line-height: 1.7;
+}
+
+/* list */
+.card ul {
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* deskripsi kecil */
+.card small {
+  display: block;
+  margin-top: 8px;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ================= SKILLS ================= */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* badge */
+.skills span {
+  background: #ffc8dd;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+}
